@@ -27,7 +27,7 @@ if __name__ == '__main__':
     print("#e - Quit")
 
     option = ""
-    while option != "q":
+    while option != "e":
 
           print("")
           option = input("Enter a menu choice: ")

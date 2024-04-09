@@ -54,9 +54,9 @@ def createDocument(col, docId, docText, docTitle, docDate, docCat):
     print(res)
 
 def deleteDocument(col, docId):
-    print("delete")
     # Delete the document from the database
-    # --> add your Python code here
+    res = col.delete_one({"id": docId})
+    print(res)
 
 def updateDocument(col, docId, docText, docTitle, docDate, docCat):
     # Delete the document
