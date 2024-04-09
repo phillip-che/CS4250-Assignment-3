@@ -59,12 +59,11 @@ def deleteDocument(col, docId):
     # --> add your Python code here
 
 def updateDocument(col, docId, docText, docTitle, docDate, docCat):
-    print("update")
     # Delete the document
-    # --> add your Python code here
+    deleteDocument(col, docId)
 
     # Create the document with the same id
-    # --> add your Python code here
+    createDocument(col, docId, docText, docTitle, docDate, docCat)
 
 def getIndex(col):
     print("index")
